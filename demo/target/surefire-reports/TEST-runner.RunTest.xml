@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="runner.RunTest" time="0.006" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="runner.RunTest" time="0.008" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
@@ -60,7 +60,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="runner.RunTest" name="initializationError" time="0.006">
+  <testcase classname="runner.RunTest" name="initializationError" time="0.008">
     <error message="Error parsing feature file gillette.feature" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: Error parsing feature file gillette.feature
 	at cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:133)
 	at cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:104)

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.404 sec <<< FAILURE!
-initializationError(runner.RunTest)  Time elapsed: 0.006 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.401 sec <<< FAILURE!
+initializationError(runner.RunTest)  Time elapsed: 0.008 sec  <<< ERROR!
 cucumber.runtime.CucumberException: Error parsing feature file gillette.feature
 	at cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:133)
 	at cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:104)
