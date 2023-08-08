@@ -3,6 +3,7 @@ package utils;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -24,7 +25,10 @@ public class Reporter {
         PropsLoader propsLoader = PropsLoader.getInstance("/src/main/java/config.properties");
 
         // Generate a timestamp for the report file
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+        TimeZone istTimeZone = TimeZone.getTimeZone("Asia/Kolkata"); // IST timezone
+        dateFormat.setTimeZone(istTimeZone);
+
         String timestamp = dateFormat.format(new Date());
 
         // Define the file path with the timestamp
