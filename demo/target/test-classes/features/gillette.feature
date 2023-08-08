@@ -3,7 +3,7 @@ Feature: Gillette Website Tests
   Background:
     Given I am on the Gillette website
 
-  Scenario Outline: Verify the search functionality
+  Scenario: Verify the search functionality
     When I search for "<searchText>" using the search option
     Then I should see "Results For Razor'" at the top of the search results
     

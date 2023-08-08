@@ -34,6 +34,7 @@ public class Homepage {
         try {
             WebElement optionElement = driver.findElement(By.xpath(Locators.optionElement));
             optionElement.click();
+            MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "click-brands"));
             test.log(Status.PASS, "Clicked MACH3");
         } catch (Exception e) {
             e.printStackTrace();
