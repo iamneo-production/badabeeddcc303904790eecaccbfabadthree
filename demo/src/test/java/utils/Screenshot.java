@@ -1,66 +1,19 @@
 
-// package utils;
-
-// import java.io.File;
-// import java.io.IOException;
-// import java.text.SimpleDateFormat;
-// import java.util.Date;
-// import java.util.TimeZone;
-
-// import org.openqa.selenium.OutputType;
-// import org.openqa.selenium.TakesScreenshot;
-// import org.openqa.selenium.WebDriver;
-// import org.openqa.selenium.io.FileHandler;
-
-// public class Screenshot {
-//     public String captureScreenshot(WebDriver driver, String testName) {
-//         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
-//         TimeZone istTimeZone = TimeZone.getTimeZone("Asia/Kolkata"); // IST timezone
-//         dateFormat.setTimeZone(istTimeZone);
-
-//         String timestamp = dateFormat.format(new Date());
-
-//         // Define the screenshots directory path
-//         String screenshotsDirectory = System.getProperty("user.dir") + "/src/main/screenshots/";
-
-//         // Create the screenshots directory if it doesn't exist
-//         File directory = new File(screenshotsDirectory);
-//         if (!directory.exists()) {
-//             directory.mkdirs();
-//         }
-
-//         File srcScreenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//         String destinationScreenshotPath = screenshotsDirectory + testName + "_" + timestamp + ".png";
-
-//         try {
-//             FileHandler.copy(srcScreenshot, new File(destinationScreenshotPath));
-//         } catch (IOException e) {
-//             e.printStackTrace();
-//         }
-
-//         return destinationScreenshotPath;
-//     }
-// }
-
-
 package utils;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
-import org.openqa.selenium.io.FileHandler;
 
-import org.apache.commons.codec.binary.Base64;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
 
 public class Screenshot {
-    public String captureScreenshotAsBase64(WebDriver driver, String testName) {
+    public String captureScreenshot(WebDriver driver, String testName) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
         TimeZone istTimeZone = TimeZone.getTimeZone("Asia/Kolkata"); // IST timezone
         dateFormat.setTimeZone(istTimeZone);
@@ -85,28 +38,75 @@ public class Screenshot {
             e.printStackTrace();
         }
 
-        // Convert the captured screenshot to Base64
-        String screenshotBase64 = convertFileToBase64(destinationScreenshotPath);
-
-        return screenshotBase64;
+        return destinationScreenshotPath;
     }
-
-    private String convertFileToBase64(String filePath) {
-        byte[] fileContent = new byte[0];
-        try (FileInputStream fileInputStream = new FileInputStream(filePath);
-             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream()) {
-    
-            byte[] buffer = new byte[1024];
-            int bytesRead;
-            while ((bytesRead = fileInputStream.read(buffer)) != -1) {
-                byteArrayOutputStream.write(buffer, 0, bytesRead);
-            }
-            
-            fileContent = byteArrayOutputStream.toByteArray();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return Base64.encodeBase64String(fileContent);
-    }
-    
 }
+
+
+// package utils;
+
+// import java.io.ByteArrayOutputStream;
+// import java.io.File;
+// import java.io.FileInputStream;
+// import java.io.IOException;
+// import java.text.SimpleDateFormat;
+// import java.util.Date;
+// import java.util.TimeZone;
+// import org.openqa.selenium.io.FileHandler;
+
+// import org.apache.commons.codec.binary.Base64;
+// import org.openqa.selenium.OutputType;
+// import org.openqa.selenium.TakesScreenshot;
+// import org.openqa.selenium.WebDriver;
+
+// public class Screenshot {
+//     public String captureScreenshotAsBase64(WebDriver driver, String testName) {
+//         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+//         TimeZone istTimeZone = TimeZone.getTimeZone("Asia/Kolkata"); // IST timezone
+//         dateFormat.setTimeZone(istTimeZone);
+
+//         String timestamp = dateFormat.format(new Date());
+
+//         // Define the screenshots directory path
+//         String screenshotsDirectory = System.getProperty("user.dir") + "/src/main/screenshots/";
+
+//         // Create the screenshots directory if it doesn't exist
+//         File directory = new File(screenshotsDirectory);
+//         if (!directory.exists()) {
+//             directory.mkdirs();
+//         }
+
+//         File srcScreenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//         String destinationScreenshotPath = screenshotsDirectory + testName + "_" + timestamp + ".png";
+
+//         try {
+//             FileHandler.copy(srcScreenshot, new File(destinationScreenshotPath));
+//         } catch (IOException e) {
+//             e.printStackTrace();
+//         }
+
+//         // Convert the captured screenshot to Base64
+//         String screenshotBase64 = convertFileToBase64(destinationScreenshotPath);
+
+//         return screenshotBase64;
+//     }
+
+//     private String convertFileToBase64(String filePath) {
+//         byte[] fileContent = new byte[0];
+//         try (FileInputStream fileInputStream = new FileInputStream(filePath);
+//              ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream()) {
+    
+//             byte[] buffer = new byte[1024];
+//             int bytesRead;
+//             while ((bytesRead = fileInputStream.read(buffer)) != -1) {
+//                 byteArrayOutputStream.write(buffer, 0, bytesRead);
+//             }
+            
+//             fileContent = byteArrayOutputStream.toByteArray();
+//         } catch (IOException e) {
+//             e.printStackTrace();
+//         }
+//         return Base64.encodeBase64String(fileContent);
+//     }
+    
+// }

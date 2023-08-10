@@ -25,7 +25,7 @@ public class Homepage {
         } catch (Exception e) {
             e.printStackTrace();
             test.log(Status.FAIL, "Unable to hover products",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshotAsBase64(driver, "hover-products"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "hover-products"))
                             .build());
         }
     }
@@ -35,12 +35,12 @@ public class Homepage {
             WebElement optionElement = driver.findElement(By.xpath(Locators.optionElement));
             optionElement.click();
             test.log(Status.PASS, "Clicked MACH3",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshotAsBase64(driver, "click-brands"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "click-brands"))
                             .build());
         } catch (Exception e) {
             e.printStackTrace();
             test.log(Status.FAIL, "Unable to click MACH3",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshotAsBase64(driver, "click-brands"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "click-brands"))
                             .build());
         }
     }
