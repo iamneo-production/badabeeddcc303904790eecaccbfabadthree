@@ -25,7 +25,7 @@ public class Homepage {
         } catch (Exception e) {
             e.printStackTrace();
             test.log(Status.FAIL, "Unable to hover products",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "hover-products"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshotAsBase64(driver, "hover-products"))
                             .build());
         }
     }
@@ -35,12 +35,12 @@ public class Homepage {
             WebElement optionElement = driver.findElement(By.xpath(Locators.optionElement));
             optionElement.click();
             test.log(Status.PASS, "Clicked MACH3",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "click-brands"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshotAsBase64(driver, "click-brands"))
                             .build());
         } catch (Exception e) {
             e.printStackTrace();
             test.log(Status.FAIL, "Unable to click MACH3",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "click-brands"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshotAsBase64(driver, "click-brands"))
                             .build());
         }
     }
@@ -50,12 +50,12 @@ public class Homepage {
             WebElement productList = driver.findElement(By.xpath(Locators.productList));
             String productListText = productList.getText();
             test.log(Status.PASS, "Found Razor Turbo",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "find-razor-turbo"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshotAsBase64(driver, "find-razor-turbo"))
                             .build());
         } catch (Exception e) {
             e.printStackTrace();
             test.log(Status.FAIL, "Unable to find Razor Turbo",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "find-razor-turbo"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshotAsBase64(driver, "find-razor-turbo"))
                             .build());
         }
     }
