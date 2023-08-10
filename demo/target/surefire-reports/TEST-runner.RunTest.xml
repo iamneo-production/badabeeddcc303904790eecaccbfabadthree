@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="0" name="runner.RunTest" time="0.966" errors="0" skipped="0">
+<testsuite tests="13" failures="0" name="runner.RunTest" time="1.106" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
@@ -62,14 +62,14 @@
   <testcase classname="| Razor |" name="Given I am on the Gillette website" time="0.002"/>
   <testcase classname="| Razor |" name="When I search for &quot;Razor&quot; using the search option" time="0"/>
   <testcase classname="| Razor |" name="Then I should see &quot;Results For Razor&apos;&quot; at the top of the search results" time="0"/>
-  <testcase classname="| Razor |" name="| Razor |" time="0.504"/>
+  <testcase classname="| Razor |" name="| Razor |" time="0.522"/>
   <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Given I am on the Gillette website" time="0"/>
-  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="When I hover on from the top navigation" time="0.001"/>
+  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="When I hover on from the top navigation" time="0"/>
   <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="And I choose &quot;MACH3&quot; under &quot;By Brands&quot; from the drop-down" time="0"/>
   <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Then I should see &quot;Gillette MACH3 Turbo&quot; under the products list" time="0"/>
-  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Scenario: Verify the display of Gillette MACH3 Turbo under products list" time="0.257"/>
+  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Scenario: Verify the display of Gillette MACH3 Turbo under products list" time="0.336"/>
   <testcase classname="Scenario: Verify the presence of &quot;Facial Hair Styles: The Anchor Beard&quot; under styling articles" name="Given I am on the Gillette website" time="0"/>
-  <testcase classname="Scenario: Verify the presence of &quot;Facial Hair Styles: The Anchor Beard&quot; under styling articles" name="When I click on &quot;Styling&quot; under &quot;Learn&quot; in the footer" time="0"/>
+  <testcase classname="Scenario: Verify the presence of &quot;Facial Hair Styles: The Anchor Beard&quot; under styling articles" name="When I click on &quot;Styling&quot; under &quot;Learn&quot; in the footer" time="0.001"/>
   <testcase classname="Scenario: Verify the presence of &quot;Facial Hair Styles: The Anchor Beard&quot; under styling articles" name="Then I should see &quot;Facial Hair Styles: The Anchor Beard&quot; under the list of articles under styling" time="0"/>
-  <testcase classname="Scenario: Verify the presence of &quot;Facial Hair Styles: The Anchor Beard&quot; under styling articles" name="Scenario: Verify the presence of &quot;Facial Hair Styles: The Anchor Beard&quot; under styling articles" time="0.202"/>
+  <testcase classname="Scenario: Verify the presence of &quot;Facial Hair Styles: The Anchor Beard&quot; under styling articles" name="Scenario: Verify the presence of &quot;Facial Hair Styles: The Anchor Beard&quot; under styling articles" time="0.245"/>
 </testsuite>
