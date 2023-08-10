@@ -50,12 +50,12 @@ public class Homepage {
             WebElement productList = driver.findElement(By.xpath(Locators.productList));
             String productListText = productList.getText();
             test.log(Status.PASS, "Found Razor Turbo",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshotAsBase64(driver, "find-razor-turbo"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "find-razor-turbo"))
                             .build());
         } catch (Exception e) {
             e.printStackTrace();
             test.log(Status.FAIL, "Unable to find Razor Turbo",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshotAsBase64(driver, "find-razor-turbo"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "find-razor-turbo"))
                             .build());
         }
     }
