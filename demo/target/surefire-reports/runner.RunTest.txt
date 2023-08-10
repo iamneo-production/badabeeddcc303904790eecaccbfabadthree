@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunTest
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 6, Skipped: 10, Time elapsed: 1.06 sec <<< FAILURE!
-| Razor |  Time elapsed: 0.272 sec  <<< ERROR!
+Tests run: 16, Failures: 0, Errors: 6, Skipped: 10, Time elapsed: 0.926 sec <<< FAILURE!
+| Razor |  Time elapsed: 0.268 sec  <<< ERROR!
 java.lang.NullPointerException
 	at runner.Base.openBrowser(Base.java:32)
 	at glue.GilletteTests.setUp(GilletteTests.java:49)
@@ -68,7 +68,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-| Razor |  Time elapsed: 0.273 sec  <<< ERROR!
+| Razor |  Time elapsed: 0.27 sec  <<< ERROR!
 java.lang.NullPointerException
 	at glue.GilletteTests.tearDown(GilletteTests.java:113)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -133,7 +133,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Scenario: Verify the display of Gillette MACH3 Turbo under products list  Time elapsed: 0.003 sec  <<< ERROR!
+Scenario: Verify the display of Gillette MACH3 Turbo under products list  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.NullPointerException
 	at runner.Base.openBrowser(Base.java:32)
 	at glue.GilletteTests.setUp(GilletteTests.java:49)
@@ -181,7 +181,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Scenario: Verify the display of Gillette MACH3 Turbo under products list  Time elapsed: 0.006 sec  <<< ERROR!
+Scenario: Verify the display of Gillette MACH3 Turbo under products list  Time elapsed: 0.005 sec  <<< ERROR!
 java.lang.NullPointerException
 	at glue.GilletteTests.tearDown(GilletteTests.java:113)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

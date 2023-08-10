@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="16" failures="0" name="runner.RunTest" time="1.401" errors="6" skipped="10">
+<testsuite tests="16" failures="0" name="runner.RunTest" time="1.379" errors="6" skipped="10">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
@@ -60,7 +60,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="| Razor |" name="| Razor |" time="0.272">
+  <testcase classname="| Razor |" name="| Razor |" time="0.268">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at runner.Base.openBrowser(Base.java:32)
 	at glue.GilletteTests.setUp(GilletteTests.java:49)
@@ -127,16 +127,16 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase classname="| Razor |" name="Given I am on the Gillette website" time="0.272">
+  <testcase classname="| Razor |" name="Given I am on the Gillette website" time="0.269">
     <skipped/>
   </testcase>
-  <testcase classname="| Razor |" name="When I search for &quot;Razor&quot; using the search option" time="0.272">
+  <testcase classname="| Razor |" name="When I search for &quot;Razor&quot; using the search option" time="0.269">
     <skipped/>
   </testcase>
-  <testcase classname="| Razor |" name="Then I should see &quot;Results For Razor&apos;&quot; at the top of the search results" time="0.273">
+  <testcase classname="| Razor |" name="Then I should see &quot;Results For Razor&apos;&quot; at the top of the search results" time="0.269">
     <skipped/>
   </testcase>
-  <testcase classname="| Razor |" name="| Razor |" time="0.273">
+  <testcase classname="| Razor |" name="| Razor |" time="0.27">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at glue.GilletteTests.tearDown(GilletteTests.java:113)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -202,7 +202,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Scenario: Verify the display of Gillette MACH3 Turbo under products list" time="0.003">
+  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Scenario: Verify the display of Gillette MACH3 Turbo under products list" time="0.002">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at runner.Base.openBrowser(Base.java:32)
 	at glue.GilletteTests.setUp(GilletteTests.java:49)
@@ -251,19 +251,19 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Given I am on the Gillette website" time="0.003">
+  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Given I am on the Gillette website" time="0.002">
     <skipped/>
   </testcase>
   <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="When I hover on from the top navigation" time="0.003">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="And I choose &quot;MACH3&quot; under &quot;By Brands&quot; from the drop-down" time="0.004">
+  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="And I choose &quot;MACH3&quot; under &quot;By Brands&quot; from the drop-down" time="0.003">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Then I should see &quot;Gillette MACH3 Turbo&quot; under the products list" time="0.004">
+  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Then I should see &quot;Gillette MACH3 Turbo&quot; under the products list" time="0.003">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Scenario: Verify the display of Gillette MACH3 Turbo under products list" time="0.006">
+  <testcase classname="Scenario: Verify the display of Gillette MACH3 Turbo under products list" name="Scenario: Verify the display of Gillette MACH3 Turbo under products list" time="0.005">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at glue.GilletteTests.tearDown(GilletteTests.java:113)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
