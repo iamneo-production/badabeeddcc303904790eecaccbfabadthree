@@ -34,9 +34,7 @@ public class Homepage {
         try {
             WebElement optionElement = driver.findElement(By.xpath(Locators.optionElement));
             optionElement.click();
-            test.log(Status.PASS, "Clicked MACH3",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "click-brands"))
-                            .build());
+            test.log(Status.PASS, "Clicked MACH3");
         } catch (Exception e) {
             e.printStackTrace();
             test.log(Status.FAIL, "Unable to click MACH3",
@@ -47,15 +45,13 @@ public class Homepage {
 
     public void findRazorTurbo(WebDriver driver, ExtentTest test) {
         try {
-            WebElement productList = driver.findElement(By.xpath(Locators.productList));
-            String productListText = productList.getText();
-            test.log(Status.PASS, "Found Razor Turbo",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "find-razor-turbo"))
-                            .build());
+        WebElement productList = driver.findElement(By.xpath(Locators.productList));
+        String productListText = productList.getText();
+        test.log(Status.PASS, "Found Razor Turbo");
         } catch (Exception e) {
             e.printStackTrace();
             test.log(Status.FAIL, "Unable to find Razor Turbo",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "find-razor-turbo"))
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "click-explore"))
                             .build());
         }
     }

@@ -1,7 +1,7 @@
 pages/Homepage.class
 runner/Base.class
-uistore/Locators.class
 runner/RunTest.class
+uistore/Locators.class
 utils/EventHandler.class
 utils/Reporter.class
 glue/GilletteTests.class

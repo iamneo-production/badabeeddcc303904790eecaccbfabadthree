@@ -24,9 +24,9 @@ public class Base {
 	public static final int PAGE_LOAD_TIME=5;
 	PropsLoader propsLoader;
 	
-	// public Base() {
-	// 	propsLoader = PropsLoader.getInstance("/src/main/java/config.properties");
-	// }
+	public Base() {
+		propsLoader = PropsLoader.getInstance("/src/main/java/config.properties");
+	}
 	
 	public WebDriver openBrowser() throws MalformedURLException {
 		String browserName = propsLoader.getProperty("browserName");
@@ -35,7 +35,7 @@ public class Base {
 
 		if(browserName.equalsIgnoreCase("chrome")) {			
 			try {
-				driver = new RemoteWebDriver(new URL("http://34.85.201.58:4445"), capabilities);
+				driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}

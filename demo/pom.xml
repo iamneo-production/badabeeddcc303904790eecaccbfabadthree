@@ -31,13 +31,6 @@
       </exclusions>
     </dependency>
     <dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.18.22</version> <!-- Use the appropriate version -->
-    <scope>provided</scope>
-    </dependency>
-
-    <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>1.2.6</version>
@@ -75,26 +68,6 @@
       <artifactId>selenium-java</artifactId>
       <version>4.7.2</version>
     </dependency>
-
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-jvm-deps</artifactId>
-      <version>1.0.6</version>
-    </dependency>
-
-    <dependency>
-    <groupId>io.qameta.allure</groupId>
-    <artifactId>allure-cucumber5-jvm</artifactId>
-    <version>2.14.0</version>
-    <scope>test</scope>
-    <exclusions>
-        <exclusion>
-            <groupId>com.thoughtworks.xstream</groupId>
-            <artifactId>xstream</artifactId>
-        </exclusion>
-    </exclusions>
-</dependency>
-
   </dependencies>
 
   <build>
@@ -147,4 +120,3 @@
     </pluginManagement>
   </build>
 </project>
-
