@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
+import java.util.
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -59,11 +60,6 @@ public class GilletteTests {
     
     @When("^I hover on from the top navigation$")
     public void iHoverOnFromTheTopNavigation() throws MalformedURLException {
-         try {
-        Thread.sleep(120000);
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
         ExtentTest test = reporter.createTest("Homepage", "Executing step 1");
         homePage.hoverToProducts(driver, test);
         log.info("Hovered");
@@ -73,6 +69,11 @@ public class GilletteTests {
     public void iChooseUnderFromTheDropDown(String option, String dropdown) {
         ExtentTest test = reporter.createTest("Homepage", "Executing step 2");
         homePage.clickBrands(driver, test);
+        // try {
+        // Thread.sleep(120000);
+        // } catch (Exception e) {
+        //     // TODO: handle exception
+        // }
         log.info("Clicked MACH3");
     }
 

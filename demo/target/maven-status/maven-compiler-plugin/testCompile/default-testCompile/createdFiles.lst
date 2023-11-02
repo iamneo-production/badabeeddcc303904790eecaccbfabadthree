@@ -1,7 +1,0 @@
-pages/Homepage.class
-runner/RunTest.class
-uistore/Locators.class
-utils/Reporter.class
-utils/Screenshot.class
-utils/PropsLoader.class
-utils/LoggerHandler.class
