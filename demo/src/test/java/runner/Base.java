@@ -35,7 +35,7 @@ public class Base {
 
 		if(browserName.equalsIgnoreCase("chrome")) {			
 			try {
-				driver = new RemoteWebDriver(new URL("http://34.86.173.116:443"), capabilities);
+				driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}

@@ -59,6 +59,11 @@ public class GilletteTests {
     
     @When("^I hover on from the top navigation$")
     public void iHoverOnFromTheTopNavigation() throws MalformedURLException {
+         try {
+        Thread.sleep(120000);
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
         ExtentTest test = reporter.createTest("Homepage", "Executing step 1");
         homePage.hoverToProducts(driver, test);
         log.info("Hovered");
